@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Somnia Food Delivery</title>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+    <style>
+        body { font-family: Arial; max-width: 600px; margin: 0 auto; padding: 20px; }
+        button { padding: 10px; margin: 5px; cursor: pointer; }
+        #orders { margin-top: 20px; border-top: 1px solid #ccc; padding-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>🍔 Somnia Food Delivery</h1>
+    
+    <button id="connectWallet">Connect Wallet</button>
+    <div id="walletStatus">Not connected</div>
+
+    <h3>Place Order</h3>
+    <input type="text" id="restaurant" placeholder="Restaurant Name">
+    <input type="text" id="item" placeholder="Food Item">
+    <input type="number" id="amount" placeholder="Amount (STT)">
+    <button id="placeOrder">Place Order</button>
+
+    <h3>Your Orders</h3>
+    <div id="orders"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
